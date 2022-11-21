@@ -15,6 +15,9 @@ def index():
 @app.route('/test')
 def test():
     return render_template('hello ça marche')
+@app.route('/test.html')
+def test():
+    return render_template('hello ça marche')
 
 if __name__ == "__main__":
     app.run(debug=True)
